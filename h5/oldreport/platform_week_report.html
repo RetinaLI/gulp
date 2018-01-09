@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit" />
+  <meta name="Keywords" content="" />
+  <meta name="Description" content="" />
+  <title></title>
+  <!-- <link type="image/x-icon" rel="shortcut icon" /> -->
+  <link rel="stylesheet" href="css/core-b716b02814.css">
+  
+  <script type="text/javascript">
+  /*
+   * 页面加载逻辑：
+   *    1. 首先会展示给用户一个loading界面；
+   *    2. 执行`pageLoadConfig.beforeStartLoad`方法；
+   *    3. 开始加载页面必要的资源，页面必要的资源根据`pageLoadConfig.files`、`html标签中的data-src/data-poster属性`、`html标签中的data-defer/data-defer-poster`分为三个阶段，分别用数字1、2、3对应，这三个阶段是依次执行的，可以使用`pageLoadConfig.completeStep`来指定在哪个阶段触发完成；
+   *    4. 当`pageLoadConfig.completeStep`指定阶段的资源加载完成后，判断`pageLoadConfig.customCompleteNotify`是否为true，如果为true，会立刻触发执行`pageLoadConfig.onLoadComplete`方法，跳至第5步，否则必须由用户自己手动触发完成事件，代码：`document.dispatchEvent("page-loaded");`，才会进入第5步；
+   *    5. 删除loading，显示页面的首屏；
+   *
+  */
+  var pageLoadConfig = {
+    completeStep: 1,
+    //是否由用户自定义触发加载完成事件，如果设为true，必须手动触发`document.dispatchEvent("page-loaded")`，才能去掉loading页面
+    customCompleteNotify: false,
+    beforeStartLoad: function(callback){
+      if(window.beforeStartLoad) {
+        window.beforeStartLoad(callback);
+      } else {
+        callback();
+      }
+    },
+    onLoadComplete: function(callback) {
+      window.initApp();
+      callback();
+    },
+    files: [
+      // {
+      //   type: "jpg",
+      //   url: ""
+      // }
+    ]
+  };
+  </script>
+</head>
+
+<body>
+    <div class='zbase-loading'>
+      <p class='zbase-note-wrap'><span class='zbase-note'>loading...</span></p>
+    </div>  
+    <div class=page_title>
+        <h1>福田商用车车联网周报</h1>
+        <div id="searchPanel">推送时间：<span id="pushDate"></span>
+        </div>
+    </div>
+    <div class="travel-info new-row first bottom-canvas">
+        <p><span id="carBrandAddStartDate"></span>-<span id="carBrandAddEndDate"></span></p>
+        <h2>各品牌车辆配装情况</h2>
+        <div class="travel-info-content summary-board-wrap">
+            <div class='summary-board'>
+              <div>
+                <label>车辆总数</label>
+                <p>
+                    <span id="carBrandAddNum" class='number-blue'></span><i class="unit">辆</i>
+                </p>
+              </div>
+            </div>
+            <div class='summary-board'>
+              <div>
+                <label>本周新增</label>
+                <p>
+                    <span id="carBrandNewNum" class='number-blue'></span><i class="unit">辆</i>
+                </p>
+              </div>
+            </div>
+            <div class='summary-board'>
+              <div>
+                <label>上周新增</label>
+                <p>
+                  <span id="lastNewAdd" class='number-blue'></span><i class="unit">辆</i>
+                </p>
+              </div>
+            </div>
+            <div class='summary-board'>
+              <div>
+                <label id = "weekRateName"></label>
+                <p>
+                  <span id="weekRate" class='number-yellow'></span><i class="unit number-yellow">%</i>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div id="week6AddInfo" class = 'canvas-wrap'></div>
+    </div>
+    <div class="travel-info new-row bg-blue">
+        <h2>各品牌车辆在线情况（在线率）</h2>
+        <div class="travel-info-content summary-board-wrap">
+            <div class = 'summary-board'>
+              <div>
+                <label>本周总在线车辆数</label>
+                <p>
+                  <span id="carBrandOnlineNum" class='number-blue'></span><i class="unit">万辆</i>
+                </p>
+              </div>
+            </div>
+            <div class = 'summary-board'>
+              <div>
+                <label>本周平均在线率</label>
+                <p>
+                  <span id="carBrandOnlineRate" class='number-blue'></span><i class="unit">%</i>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div id="carBrandAddAndRunInfo" class = 'canvas-wrap'></div>
+        <div class = 'table-wrap'>
+            <table id="online_list" class="tableStyle"></table>
+        </div>
+    </div>
+    <div class="travel-info new-row travel-report">
+        <h2>各品牌车辆运营情况</h2>
+        <div class="travel-info-content summary-board-wrap">
+            <div class = 'summary-board col-3'>
+              <div>
+                <label>运营车辆总数</label>
+                <p>
+                  <span id="total" class = 'number-blue'></span><i class="unit">万辆</i>
+                </p>
+              </div>
+            </div>
+            <div class = 'summary-board col-3'>
+              <div>
+                <label>运行里程数</label>
+                <p>
+                  <span id="mileage" class = 'number-blue'></span><i class="unit">万公里</i>
+                </p>
+              </div>
+            </div>
+            <div class = 'summary-board col-3'>
+              <div>
+                <label>运行时长</label>
+                <p>
+                  <span id="hours" class = 'number-blue'></span><i class="unit">万小时</i>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="travel-info-content summary-board-wrap">
+            <div class = 'summary-board col-3'>
+              <div>
+                <label>采集位置数据量</label>
+                <p>
+                  <span id="locationTotal" class = 'number-blue'></span><i class="unit">亿条</i>
+                </p>
+              </div>
+            </div>
+            <div class = 'summary-board col-3'>
+              <div>
+                <label>采集CAN数据量</label>
+                <p>
+                  <span id="canTotal" class = 'number-blue'></span><i class="unit">亿条</i>
+                </p>
+              </div>
+            </div>
+            <div class = 'summary-board col-3'>
+              <div>
+                <label>采集报警数</label>
+                <p>
+                  <span id="alertTotal" class = 'number-blue'></span><i class="unit">亿条</i>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class = 'table-wrap'>
+            <table id="runInfo_list"></table>
+        </div>
+    </div>
+    <div class="travel-info new-row bg-blue">
+        <h2>各品牌车辆运营平均情况</h2>
+        <div id="carBrandChartAvgRun" class = 'canvas-wrap'></div>
+        <div class = 'table-wrap'>
+            <table id="avgRun_list" class="tableStyle"></table>
+        </div>
+    </div>
+    <div class="travel-info new-row">
+        <h2>运营平均里程分布情况</h2>
+        <div id="operateAvgMileageChart" class = 'canvas-wrap'></div>
+        <div class = 'data-paragraph'>
+            <p><label id="operateMileageFirstName"></label>、<label id="operateMileageSecondName"></label>、<label id="operateMileageThirdName"></label>是全国运营平均里程最多的三个省市，
+        分别为<span id="operateMileageFirstMileage" class = 'number-blue'></span>公里、<span id="operateMileageSecondMileage" class = 'number-blue'></span>公里、<span id="operateMileageThirdMileage" class = 'number-blue'></span>公里</p>
+            <p><label id="operateMileageLastOneName"></label>、<label id="operateMileageLastTwoName"></label>、<label id="operateMileageLastThreeName"></label>是全国运营平均里程最少的三个省市，
+        分别为<span id="operateMileageLastOneMileage" class = 'number-blue'></span>公里、<span id="operateMileageLastTwoMileage" class = 'number-blue'></span>公里、<span id="operateMileageLastThreeMileage" class = 'number-blue'></span>公里</p>
+        </div>
+    </div>
+    <div class="travel-info new-row bg-blue">
+        <h2>运营平均速度分布情况</h2>
+        <div id="operateAvgVelocityChart" class = 'canvas-wrap'></div>
+        <div class = 'data-paragraph'>
+            <p><label id="operateAvgVelocityFirstName"></label>、<label id="operateAvgVelocitySecondName"></label>、<label id="operateAvgVelocityThirdName"></label>是全国运营平均速度最快的三个省市，
+        分别为<span id="operateAvgVelocityFirstMileage" class = 'number-blue'></span>KM/H、<span id="operateAvgVelocitySecondMileage" class = 'number-blue'></span>KM/H、<span id="operateAvgVelocityThirdMileage" class = 'number-blue'></span>KM/H</p>
+            <p><label id="operateAvgVelocityLastOneName"></label>、<label id="operateAvgVelocityLastTwoName"></label>、<label id="operateAvgVelocityLastThreeName"></label>是全国运营平均速度最慢的三个省市，
+        分别为<span id="operateAvgVelocityLastOneMileage" class = 'number-blue'></span>KM/H、<span id="operateAvgVelocityLastTwoMileage" class = 'number-blue'></span>KM/H、<span id="operateAvgVelocityLastThreeMileage" class = 'number-blue'></span>KM/H</p>
+        </div>
+    </div>
+    <div class="travel-info new-row">
+        <h2>运营率分布情况</h2>
+        <div id="operateAttendanceChart" class = 'canvas-wrap'></div>
+        <div class = 'data-paragraph'>
+            <p><label id="operateAttendanceFirstName" ></label>、<label id="operateAttendanceSecondName"></label>、<label id="operateAttendanceThirdName"></label>是全国运营率最高的三个省市，
+        分别为<span id="operateAttendanceFirstMileage" class = 'number-blue'></span>%、<span id="operateAttendanceSecondMileage" class = 'number number-blue'></span>%、<span id="operateAttendanceThirdMileage" class = 'number number-blue'></span>%</p>
+            <p><label id="operateAttendanceLastOneName"></label>、<label id="operateAttendanceLastTwoName"></label>、<label id="operateAttendanceLastThreeName"></label>是全国运营率最低的三个省市，
+        分别为<span id="operateAttendanceLastOneMileage" class = 'number-blue'></span>%、<span id="operateAttendanceLastTwoMileage" class = 'number-blue'></span>%、<span id="operateAttendanceLastThreeMileage" class = 'number number-blue'></span>%</p>
+        </div>
+    </div>
+</body>
+<script src="js/main-d9e590f7e7.js"></script>
+
+</html>

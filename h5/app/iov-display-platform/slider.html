@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>福田车联网云服务中心</title>
+  <!-- build:css css/slider.css -->
+  <link rel="stylesheet/less" type="text/css" href="less/slider.less">
+  <!-- endbuild -->
+  <!-- build:remove -->
+  <script type="text/javascript">
+  less = {
+    env: "development",
+    async: false,
+    fileAsync: false,
+    poll: 1000,
+    functions: {},
+    dumpLineNumbers: "comments",
+    relativeUrls: false,
+    onReady: function(){
+      console.info(2);
+    }
+  };
+  </script>
+  <script type="text/javascript" src='../common/js/less.min.js'></script>
+  <!-- endbuild -->
+</head>
+
+<body>
+  <div class="swiper-container swiper-container-horizontal">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <iframe data-src="monitor.html" id="monitorPage" scrolling="no"></iframe>
+      </div>
+      <div class="swiper-slide">
+        <iframe data-src="index.html" id="indexPage" scrolling="no"></iframe>
+      </div>
+      <div class="swiper-slide">
+        <iframe data-src="addedValue.html" id="addedPage" scrolling="no"></iframe>
+      </div>
+    </div>
+    <div class="swiper-pagination swiper-pagination-bullets">
+      <span class="swiper-pagination-bullet"></span>
+      <span class="swiper-pagination-bullet"></span>
+      <span class="swiper-pagination-bullet"></span>
+    </div>
+  </div>
+  <!-- build:js js/slider.js -->
+  <script src='js/jquery/jquery.js'></script>
+  <script src='js/swiper/swiper.jquery.js'></script>
+  <script src='js/callserver.js'></script>
+  <script src='js/main/global.js'></script>
+  <script src='js/slider/slider.js'></script>
+  <!-- endbuild -->
+</body>
+
+</html>

@@ -1,0 +1,1820 @@
+/*
+*清除浏览器默认样式，保证各浏览器默认样式一致
+*/
+/*css reset*/
+html{font:12px/1.5em Microsoft YaHei,Simsun,Verdana,Tahoma,Arial Unicode MS,Mingliu,Helvetica;color:#666;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,tr,table{margin:0;padding:0;-webkie-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+ol,ul{list-style:none;}
+caption,th{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:' ';}
+abbr,acronym{border:0;}
+input::-ms-clear{display:none;}
+input:focus{outline:medium}
+a{text-decoration: none;color:#666;}
+i{font-style: normal;}
+input:focus { outline: none;}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+div::-webkit-scrollbar,
+ul::-webkit-scrollbar,
+span::-webkit-scrollbar,
+body::-webkit-scrollbar{
+    width:10px;
+    height:10px;
+}
+div::-webkit-scrollbar-button,
+ul::-webkit-scrollbar-button,
+span::-webkit-scrollbar-button,
+body::-webkit-scrollbar-button{
+    display:none;
+}
+
+div::-webkit-scrollbar-track,
+ul::-webkit-scrollbar-track,
+span::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track{
+    background:#1b1b59;
+}
+
+div::-webkit-scrollbar-thumb,
+ul::-webkit-scrollbar-thumb,
+span::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb{
+    background:#333c94;
+    border-radius:5px;
+}
+
+div::-webkit-scrollbar-corner,
+ul::-webkit-scrollbar-corner,
+span::-webkit-scrollbar-corner,
+body::-webkit-scrollbar-corner {
+    background:#1b1b59;
+}
+
+div::-webkit-scrollbar-resizer,
+ul::-webkit-scrollbar-resizer,
+span::-webkit-scrollbar-resizer,
+body::-webkit-scrollbar-resizer{
+    background:#1b1b59;
+}
+
+
+body,div,ul,textarea,span{
+    scrollbar-arrow-color: #b1b4c1;
+    scrollbar-face-color: #999;
+    scrollbar-highlight-color: #b1b4c1;
+    scrollbar-shadow-color: #b1b4c1;
+    scrollbar-track-color: #b1b4c1;
+}
+
+/*
+*公用样式
+*/
+.fl {float: left;}
+.fr {float: right;}
+/*.clearfix {clear: both;}*/
+.clearfix {zoom: 1;}
+.clearfix:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+    font-size: 0;
+}
+.pa{position:absolute;}
+.pr{position:relative;}
+.tc{text-align:center;}
+.tr{text-align:right;}
+.tl{text-align:left;}
+.db{display:block;}
+.dnb{display:inline-block;}
+.dn{display:none;}
+
+html{height:100%;}
+
+body{
+    height:100%;
+    overflow: hidden !important;
+}
+
+.page{
+    width:1920px;
+    height:1080px;
+    margin:0;
+    overflow: hidden;
+    background:url(../assets/images/bj.jpg) 0 0 no-repeat;
+}
+
+.logo{
+    margin:8px 0 0 28px;
+}
+
+.brand{
+    margin: 50px 20px 0 0;
+    font-size:34px;
+    color:#fff;
+    line-height:40px;
+    width:220px;
+}
+
+.brand .icon{
+    background:url(../assets/images/icon.png) 0 0 no-repeat;
+    width:39px;
+    height:44px;
+    margin-left:45px;
+}
+
+.index1 .left_silder{
+    margin-left:10px;
+    width:378px;
+    position:relative;
+    z-index: 2;
+}
+
+.index1 .main{
+    width:1150px;
+    /*height:300px;*/
+}
+
+.index1 .right_silder{
+    width:355px;
+    position:relative;
+    z-index: 2;
+}
+
+/*不规范驾驶行为分析*/
+.index1 .driving{
+    background:url(../assets/images/driving.png) 0 0 no-repeat;
+    /*width:428px;*/
+    width:377px;
+    height:357px;
+    margin-top:90px;
+}
+
+
+/*本月的故障*/
+.index1 .fault{
+    background:url(../assets/images/fault01.png) 0 0 no-repeat;
+    /*width:428px;*/
+    width:377px;
+    height:445px;
+    margin-top:40px;
+}
+
+.index1 .newfault{
+    background:url(../assets/images/fault.png) 0 0 no-repeat;
+    /*width:428px;*/
+    width:377px;
+    height:324px;
+    margin-top:90px;
+}
+
+
+/*数据采集*/
+.index1 .collection{
+    background:url(../assets/images/collection.png) 0 0 no-repeat;
+    /*width:405px;*/
+    width:355px;
+    height:355px;
+    margin-top:90px;
+    padding-top:35px;
+}
+
+.index1.new .collection{
+    padding-top:0;
+}
+
+
+/*今日报警分析*/
+.index1 .alerm{
+    background:url(../assets/images/alerm.png) 0 0 no-repeat;
+    /*width:405px;*/
+    width:355px;
+    height:323px;
+    margin-top:75px;
+}
+
+#drivingInner,
+#faultInner,
+#alermInner,
+#onlineCont,
+#regMonitorCont,
+#bussessCarCont,
+#car1Cont,
+#car2Cont,
+#car3Cont{
+    width:100%;
+    height:100%;
+    padding:10px;
+}
+
+#onlineCont{
+    height:95%;
+}
+
+#mapInner{
+    height:960px;
+    /*width:1550px;
+    margin-top:-80px;
+    margin-left:-198px;*/
+    position: relative;
+    z-index: 1;
+}
+
+.collection{
+    padding:10px 25px;
+}
+
+.collection .title{
+    font-size:16px;
+    color:#fff;
+    height:25px;
+    line-height:25px;
+}
+
+.index1 .collection .allIn,
+.index1 .collection .mouth,
+.index1 .collection .today{
+    margin-bottom:20px;
+}
+
+.collectionCont{
+    height:47px;
+    border-radius: 5px;
+    overflow:hidden;
+    /*border:1px solid #4c84d4;*/
+    display:inline-block;
+    /*box-shadow:0 0 8px #4c84d4;*/
+}
+
+.collectionCont ul{
+    border:1px solid #5192eb;
+    border-radius:5px;
+    height:47px;
+    padding-top:1px;
+    box-shadow:0 0 8px #4c84d4;
+}
+
+.collectionCont li{
+    width:27px;
+    height:45px;
+    line-height:45px;
+    background:url(../assets/images/num.png) center center no-repeat;
+    display:none;
+    /*border-left:1px solid #32559f;*/
+    transition:all .3s;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -o-transition:all .5s;
+    border-left:1px solid #4174c9;
+}
+
+.collectionCont li:nth-child(1){
+    border-left:none;
+}
+
+.collectionCont li.active{
+    display:block;
+}
+
+.monitor .map{
+    padding-left:10px;
+    width:1425px;
+}
+
+.monitor .silder{
+    width:470px;
+}
+
+.monitor .car{
+    background:url(../assets/images/mapList.png) 0 0 no-repeat;
+    width:287px;
+    height:152px;
+    margin-top:60px;
+    padding:25px;
+    cursor:pointer;
+}
+
+.monitor .map_left .title{
+    font-size:16px;
+    color:#fff;
+    margin-left:5px;
+}
+
+.monitor .map_left .cont{
+    /*background:url(../assets/images/monitorNum.png) 0 0 no-repeat;*/
+    /*width:230px;*/
+    height:41px;
+    margin-top:20px;
+    /*padding:10px 6px;*/
+    overflow: hidden;
+    display:inline-block;
+    border:1px solid #4c84d4;
+    border-radius:5px;
+    box-shadow:0 0 8px #4c84d4;
+}
+
+.monitor .map_left .cont li{
+    background:url(../assets/images/num.png) center 0 no-repeat;
+    width:28px;
+    height:41px;
+    border-left:1px solid #4c84d4;
+    display:none;
+    transition:all .3s;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -o-transition:all .5s;
+}
+
+.monitor .map_left .cont li.active{
+    display:block;
+}
+
+.monitor .map_left .cont li:nth-child(1){
+    border:none;
+}
+
+.monitor .map_cont{
+    width:1120px;
+    height:960px;
+}
+
+.monitor #myMap{
+    /*width:1400px;*/
+    height:100%;
+    /*margin-top:-84px;
+    margin-left:-133px;*/
+   /* height:100%;*/
+}
+
+.monitor .online{
+    background:url(../assets/images/onlineCar.png) 0 0 no-repeat;
+    width:468px;
+    height:295px;
+    margin-top:50px;
+}
+
+.monitor .regMonitor{
+    background:url(../assets/images/monitorCar.png) 0 0 no-repeat;
+    width:468px;
+    height:301px;
+    margin-top:50px;
+}
+
+.addedValue .addedTop{
+    height:564px;
+}
+
+.addedValue .baiduMap{
+    width:1195px;
+    /*height:564px;*/
+    min-height:564px;
+    margin-left:20px;
+}
+
+.addedValue .allMileage{
+    margin-bottom:20px;
+}
+
+.addedValue .allMileage,
+.addedValue .allTime{
+    background:url(../assets/images/addNum.png) 0 0 no-repeat;
+    width:637px;
+    height:113px;
+}
+
+.addedValue .addedTop{
+    margin-top:30px;
+}
+
+.addedValue .allMileage,
+.addedValue .allTime{
+    padding:5px 25px;
+    margin-left:20px;
+}
+
+.addedValue .title{
+    font-size:17px;
+    color:#fff;
+    height:25px;
+    line-height:25px;
+}
+
+.addedValue .allMileageCont,
+.addedValue .allTimeCont{
+    /*background:url(../assets/images/addedValueNum.png) 0 0 no-repeat;*/
+    /*width:602px;*/
+    height:41px;
+    margin-top:15px;
+    overflow: hidden;
+    border:1px solid #4c84d4;
+    border-radius:5px;
+    box-shadow:0 0 8px #4c84d4;
+    display:inline-block;
+}
+
+.addedValue .allMileageCont li,
+.addedValue .allTimeCont li{
+    background:url(../assets/images/num.png) center 0 no-repeat;
+    width:28px;
+    height:41px;
+    margin-left:1px;
+    border-left:1px solid #223679;
+    display:none;
+    transition:all .3s;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -o-transition:all .5s;
+}
+
+.addedValue .allMileageCont li.active,
+.addedValue .allTimeCont li.active{
+    display:block;
+
+}
+
+.addedValue .allMileageCont li:nth-child(1),
+.addedValue .allTimeCont li:nth-child(1){
+    border:none;
+}
+
+.addedValue .bussessCar{
+    background:url(../assets/images/bussuseCar.png) center center no-repeat;
+    width:639px;
+    height:299px;
+    margin-top:20px;
+    margin-left:1px;
+    margin-left:20px;
+}
+
+.addedValue .addedRight{
+    margin-left:20px;
+}
+
+.addedValue .addedBottom{
+    margin-top:25px;
+}
+
+.addedValue .car1,
+.addedValue .car3{
+    background:url(../assets/images/car1.png) 0 0 no-repeat;
+    width:640px;
+    height:299px;
+    margin-left:20px;
+    margin-top:25px;
+}
+
+.addedValue .car2{
+    background:url(../assets/images/car2.png) 0 0 no-repeat;
+    width:535px;
+    height:299px;
+    margin-left:20px;
+    margin-top:25px;
+}
+
+.addedValue .car2.show{
+    background:url(../assets/images/car1.png) 0 0 no-repeat;
+    width:640px;
+    height:299px;
+    margin-top:20px;
+}
+
+#myMap{
+    width:100%;
+    height:100%;
+}
+
+.monitor .online .time,
+.addedValue .time,
+.index1 .time{
+    margin-left:44px;
+    color:#0370e7;
+    font-size:10px;
+    margin-top:-30px;
+}
+
+/*.monitor .online .time{
+    margin-top:-57px;
+}*/
+
+.index1 .time{
+    margin-top:-85px;
+    margin-left:29px;
+}
+
+.monitor .online .time .start,
+.addedValue .time .start,
+.index1 .time .start{
+    margin-right:8px
+}
+
+
+.monitor .online .time .middle,
+.monitor .online .time .end,
+.monitor .online .time .start,
+.addedValue .time .middle,
+.addedValue .time .end,
+.addedValue .time .start,
+.index1 .time .middle,
+.index1 .time .end,
+.index1 .time .start{
+    width:30px;
+    text-align: center;
+}
+
+.monitor .online .time .middle,
+.monitor .online .time .end,
+.addedValue .time .middle,
+.addedValue .time .end,
+.index1 .time .middle,
+.index1 .time .end{
+    margin:0 8px;
+}
+
+.anchorBL{
+    display:none;
+}
+
+.nav{
+    width:220px;
+    border:1px solid #1618B0;
+    top:92px;
+    left:0;
+    background:#0E1384;
+    display:none;
+    z-index: 3;
+}
+
+.nav .pageNav{
+    border-bottom:1px dotted #1618B0;
+}
+
+.nav .list{
+    width:160px;
+    height:36px;
+    line-height:36px;
+    border-top:1px dotted #1618B0;
+}
+
+.nav .list:nth-child(1){
+    border:none;
+}
+
+.nav .list a{
+    display:block;
+    color:#fff;
+    font-size:16px;
+    padding-left:10px;
+}
+
+.addedValue .allMileageCont li.count0,
+.addedValue .allTimeCont li.count0,
+.collectionCont li.count0,
+.monitor .map_left .cont li.count0,
+.lifeCycle .serve .cont .count0{background-position:0 -369px;}
+
+.addedValue .allMileageCont li.count1,
+.addedValue .allTimeCont li.count1,
+.collectionCont li.count1,
+.monitor .map_left .cont li.count1,
+.lifeCycle .serve .cont .count1{background-position:0 -328px;}
+
+.addedValue .allMileageCont li.count2,
+.addedValue .allTimeCont li.count2,
+.collectionCont li.count2,
+.monitor .map_left .cont li.count2,
+.lifeCycle .serve .cont .count2{background-position:0 -287px;}
+
+.addedValue .allMileageCont li.count3,
+.addedValue .allTimeCont li.count3,
+.collectionCont li.count3,
+.monitor .map_left .cont li.count3,
+.lifeCycle .serve .cont .count3{background-position:0 -246px;}
+
+.addedValue .allMileageCont li.count4,
+.addedValue .allTimeCont li.count4,
+.collectionCont li.count4,
+.monitor .map_left .cont li.count4,
+.lifeCycle .serve .cont .count4{background-position:0 -205px;}
+
+.addedValue .allMileageCont li.count5,
+.addedValue .allTimeCont li.count5,
+.collectionCont li.count5,
+.monitor .map_left .cont li.count5,
+.lifeCycle .serve .cont .count5{background-position:0 -164px;}
+
+.addedValue .allMileageCont li.count6,
+.addedValue .allTimeCont li.count6,
+.collectionCont li.count6,
+.monitor .map_left .cont li.count6,
+.lifeCycle .serve .cont .count6{background-position:0 -123px;}
+
+.addedValue .allMileageCont li.count7,
+.addedValue .allTimeCont li.count7,
+.collectionCont li.count7,
+.monitor .map_left .cont li.count7,
+.lifeCycle .serve .cont .count7{background-position:0 -82px;}
+
+.addedValue .allMileageCont li.count8,
+.addedValue .allTimeCont li.count8,
+.collectionCont li.count8,
+.monitor .map_left .cont li.count8,
+.lifeCycle .serve .cont .count8{background-position:0 -41px;}
+
+.addedValue .allMileageCont li.count9,
+.addedValue .allTimeCont li.count9,
+.collectionCont li.count9,
+.monitor .map_left .cont li.count9,
+.lifeCycle .serve .cont .count9{background-position:0 0;}
+
+.addedValue .allMileageCont li.count10,
+.addedValue .allTimeCont li.count10,
+.collectionCont li.count10,
+.monitor .map_left .cont li.count10{background-position:0 -410px;}
+
+.brandNav{
+    max-height:400px;
+    /*display:none;*/
+}
+
+.mapBtn{
+    top:20px;
+    right:45px;
+}
+
+.mapBtn a{
+    background:url(../assets/images/mapBtn.png) 0 0 no-repeat;
+    width:122px;
+    height:62px;
+    line-height:56px;
+    display:block;
+    margin-bottom:35px;
+    font-size:18px;
+    color:#fff;
+}
+
+.mapBtn a.active{
+    color:#0AF6E6;
+    background:url(../assets/images/mapBtnHover.png) 0 0 no-repeat;
+}
+
+.mapTip{
+    top:360px;
+    left:700px;
+    font-size:20px;
+    color:#fff;
+    z-index: 2;
+}
+
+.index1 .header{
+    position:relative;
+    z-index: 3;
+}
+
+.footerNav{
+    left:50%;
+    bottom:5px;
+    height:27px;
+    line-height:27px;
+    z-index:5;
+    border:1px solid #242D7B;
+    padding-right:25px;
+    border-radius:15px;
+    transform: translate(-50%,0);
+}
+
+.footerNav .navBtn{
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    display:block;
+    margin-top:6px;
+    margin-left:25px;
+    background:url(../assets/images/nav.png) 0 0 no-repeat;
+}
+
+.footerNav .navBtn.active{
+    background:url(../assets/images/navactive.png) 0 0 no-repeat;
+}
+
+.monitor .shumiddle{
+    border-left:1px dashed yellow;
+    height: 173px;
+    top: 70px;
+    left: 235px;
+}
+
+.addedValue .header{
+    margin-bottom:30px;
+}
+
+.addedValue .brandId1075,
+.addedValue .brandId1076,
+.addedValue .brandId1077,
+.lifeCycle .brandId1075,
+.lifeCycle .brandId1076,
+.lifeCycle .brandId1077,
+.dealer .brandId1075,
+.dealer .brandId1076,
+.dealer .brandId1077,
+.service .brandId1075,
+.service .brandId1076,
+.service .brandId1077{
+    display:none;
+}
+
+.brandId1046,
+.brandId1075{
+    display:none;
+}
+
+
+
+
+/**欧曼品牌加中心库存，经销商库存，在途，已销车辆*/
+.monitor.om .car,
+.monitor.om .stock{
+    height:112px;
+    margin-top:25px;
+    background:url(../assets/images/mapList_om.png) 0 0 no-repeat;
+    padding:15px;
+    display:block;
+}
+
+.monitor.om .map_left .cont{
+    margin-top:12px;
+}
+
+.zs{
+    overflow:hidden;
+}
+
+.time{
+    height:17px;
+    overflow: hidden;
+}
+
+.monitor .zs{
+    width:136px;
+}
+
+.addedValue .car3 .zs{
+    width:216px;
+}
+
+
+/*生命周期*/
+.lifeCycle .page{
+    background:url(../assets/images/lifeCycleBj.jpg) 0 0 no-repeat;
+}
+
+.lifeCycle .container{
+    height:880px;
+    background:url(../assets/images/hourse.png) center bottom no-repeat;
+}
+
+.lifeCycle .box .title{
+    color:#fff;
+    text-align:right;
+    height:41px;
+    line-height:41px;
+}
+
+.lifeCycle .box .list{
+    line-height:32px;
+    margin-bottom:12px;
+}
+
+.lifeCycle .box .num{
+    margin-left:5px;
+}
+
+.service .box .list .count,
+.lifeCycle .box .list .count{
+    width:28px;
+    height:41px;
+    border:1px solid #055aba;
+    margin-right:2px;
+    /*color:#217aff;
+    font-size:26px;
+    font-weight:bold;
+    text-align:center;*/
+    background:url(../assets/images/num1.png) 0 0 no-repeat;
+    display: none;
+    transition:all .3s;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -o-transition:all .5s;
+}
+
+.service .box .list .count.active,
+.lifeCycle .box .list .count.active{display:block}
+
+.lifeCycle .box .list .count0,.service .box .list .count0{background-position:0 -369px;}
+.lifeCycle .box .list .count1,.service .box .list .count1{background-position:0 -328px;}
+.lifeCycle .box .list .count2,.service .box .list .count2{background-position:0 -287px;}
+.lifeCycle .box .list .count3,.service .box .list .count3{background-position:0 -246px;}
+.lifeCycle .box .list .count4,.service .box .list .count4{background-position:0 -205px;}
+.lifeCycle .box .list .count5,.service .box .list .count5{background-position:0 -164px;}
+.lifeCycle .box .list .count6,.service .box .list .count6{background-position:0 -123px;}
+.lifeCycle .box .list .count7,.service .box .list .count7{background-position:0 -82px;}
+.lifeCycle .box .list .count8,.service .box .list .count8{background-position:0 -41px;}
+.lifeCycle .box .list .count9,.service .box .list .count9{background-position:0 0;}
+
+.lifeCycle .produce{
+    top:300px;
+    left:90px;
+}
+
+.lifeCycle .centerStore{
+    top:220px;
+    left:460px;
+}
+
+.lifeCycle .reg .title{
+    width:100px;
+}
+
+.lifeCycle .modifyStore{
+    top:120px;
+    left:990px;
+}
+
+.lifeCycle .travel{
+    top:740px;
+    left:1480px;
+}
+
+.lifeCycle .travel .title{
+    width:140px;
+}
+
+.lifeCycle .service{
+    top:370px;
+    left:1650px;
+}
+
+.lifeCycle .dealerStore{
+    top:780px;
+    left:920px;
+}
+
+.lifeCycle .switchStationStore{
+    top:800px;
+    left:380px;
+}
+
+.lifeCycle .switchStationStore .title{
+    width:100px;
+}
+
+.lifeCycle .financial{
+    top:120px;
+    left:1330px;
+}
+
+.lifeCycle .financial .title{
+    width:120px;
+}
+
+.lifeCycle .financial .cont{
+    margin-bottom:20px;
+}
+
+.lifeCycle .financial .cont{
+    height:41px;
+    margin-top:10px;
+    overflow: hidden;
+    display:inline-block;
+    border:1px solid #4c84d4;
+    border-radius:5px;
+    box-shadow:0 0 8px #4c84d4;
+}
+
+.lifeCycle .financial .count{
+    background:url(../assets/images/num.png) center 0 no-repeat;
+    width:28px;
+    height:41px;
+    border-left:1px solid #4c84d4;
+    transition:all .3s;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    -o-transition:all .5s;
+    display:none;
+}
+
+.lifeCycle .financial .count.active{
+    display:block;
+}
+
+.lifeCycle .financial .count0:nth-child(1){
+    border-left:none;
+}
+
+#login .wrapper{
+    background:url(../assets/images/loginBj.jpg) 0 0 no-repeat;
+    height:1080px;
+    width:1920px;
+    margin:0;
+    overflow: hidden;
+    position: relative;
+}
+
+#login .loginFrom{
+    position:absolute;
+    left: 50%;
+    bottom: 76px;
+    z-index: 5;
+    padding-right: 25px;
+    border-radius: 15px;
+    transform: translate(-50%, 0);
+}
+
+#login .loginInput{
+    width:220px;
+    height:38px;
+    padding: 0 9px;
+    border:1px solid #0131d8;
+    margin-right:50px;
+    color:#fff;
+    text-align: left;
+    background:none;
+}
+
+#login #loginBtn{
+    width:240px;
+    height:40px;
+    text-align: center;
+    line-height:40px;
+    font-size:20px;
+    color:#fff;
+    display: inline-block;
+    background:#021c77;
+}
+
+.dealer .container{
+    margin:50px;
+}
+
+.dealer .map{
+    width:1300px;
+    height:847px;
+    /*margin-right:32px;*/
+}
+
+.dealer #myMap{
+    height:100%;
+}
+
+.dealer #errorData{
+    margin-top:150px;
+    width:500px;
+    height:480px;
+}
+
+.newEnergy{
+    margin-top:20px;
+}
+
+.new.monitor .map_left .cont{
+    margin-top:0;
+}
+
+.newcar2{
+    background:url(../assets/images/newmapList.png) 0 0 no-repeat;
+    width:475px;
+    height:300px;
+    margin-bottom:10px;
+    padding-top:26px;
+    margin-top:50px;
+}
+
+.new .newcar{
+    background:url(../assets/images/mapListnew.png) 0 0 no-repeat;
+    width:382px;
+    height:223px;
+    margin-bottom:10px;
+    padding-top:26px;
+}
+
+.new .map_left{
+    height:960px;
+    overflow: auto;
+}
+
+.new .map_left .title{
+    width:140px;
+    text-align:right;
+    height:41px;
+    line-height:41px;
+    margin-right:10px;
+}
+
+.new .newcarCont{
+    margin-top:30px;
+    cursor:pointer;
+}
+
+.new.monitor .map_cont{
+    width:920px;
+    /*margin-left: 182px;*/
+}
+
+.lifeCycle .way1{
+    top:468px;
+    left:240px;
+}
+
+.lifeCycle .wayCar{
+    background:url(../assets/images/lifeSycle/car1.png) 0 0 no-repeat;
+    width:9px;
+    height:23px;
+}
+
+.lifeCycle .way1 .wayCar{
+    transform:rotate(78deg);
+    -webkit-transform:rotate(78deg);
+    -moz-transform:rotate(78deg);
+    -o-transform:rotate(78deg);
+    -ms-transform:rotate(78deg);
+}
+
+@keyframes way1car1 {
+    from {left:40px;top:0;}
+    to {left:329px;top:-60px;}
+}
+
+@-moz-keyframes way1car1 {
+    from {left:40px;top:0;}
+    to {left:329px;top:-60px;}
+}
+
+@-webkit-keyframes way1car1 {
+    from {left:40px;top:0;}
+    to {left:329px;top:-60px;}
+}
+
+@-o-keyframes way1car1 {
+    from {left:40px;top:0;}
+    to {left:329px;top:-60px;}
+}
+
+.lifeCycle .way1 .car1{
+    left:40px;
+    top:0;
+    animation: way1car1 5s infinite;
+    -moz-animation: way1car1 5s infinite;
+    -webkit-animation: way1car1 5s infinite;
+    -o-animation: way1car1 5s infinite;
+}
+
+.lifeCycle .way1 .wayCar{
+    transform:rotate(78deg);
+    -webkit-transform:rotate(78deg);
+    -moz-transform:rotate(78deg);
+    -o-transform:rotate(78deg);
+    -ms-transform:rotate(78deg);
+}
+
+@keyframes way1car2 {
+    from {left:0;top:21px;}
+    to {left:335px;top:-48px;}
+}
+
+@-moz-keyframes way1car2 {
+    from {left:0;top:21px;}
+    to {left:335px;top:-48px;}
+}
+
+@-webkit-keyframes way1car2 {
+    from {left:0;top:21px;}
+    to {left:335px;top:-48px;}
+}
+
+@-o-keyframes way1car2 {
+    from {left:0;top:21px;}
+    to {left:335px;top:-48px;}
+}
+
+.lifeCycle .way1 .car2{
+    left:0;
+    top:21px;
+    animation: way1car2 8s infinite;
+    -moz-animation: way1car2 8s infinite;
+    -webkit-animation: way1car2 8s infinite;
+    -o-animation: way1car2 8s infinite;
+}
+
+.lifeCycle .way2{
+    top:330px;
+    left:737px;
+}
+
+.lifeCycle .way2 .wayCar{
+    transform:rotate(75deg);
+    -webkit-transform:rotate(75deg);
+    -moz-transform:rotate(75deg);
+    -o-transform:rotate(75deg);
+    -ms-transform:rotate(75deg);
+}
+
+.lifeCycle .way2 .car1{
+    top:0;
+    left:0;
+    animation: way2car1 10s infinite;
+    -moz-animation: way2car1 10s infinite;
+    -webkit-animation: way2car1 10s infinite;
+    -o-animation: way2car1 10s infinite;
+}
+
+@keyframes way2car1 {
+    from {left:0;top:0;}
+    to {left:308px;top:-89px;}
+}
+
+@-moz-keyframes way2car1 {
+    from {left:0;top:0;}
+    to {left:308px;top:-89px;}
+}
+
+@-webkit-keyframes way2car1 {
+    from {left:0;top:0;}
+    to {left:308px;top:-89px;}
+}
+
+@-o-keyframes way2car1 {
+    from {left:0;top:0;}
+    to {left:308px;top:-89px;}
+}
+
+.lifeCycle .way2 .car2{
+    top:11px;
+    left:10px;
+    animation: way2car2 8s infinite;
+    -moz-animation: way2car2 8s infinite;
+    -webkit-animation: way2car2 8s infinite;
+    -o-animation: way2car2 8s infinite;
+}
+
+@keyframes way2car2 {
+    from {left:10px;top:11px;}
+    to {left:322px;top:-79px;}
+}
+
+@-moz-keyframes way2car2 {
+    from {left:10px;top:11px;}
+    to {left:322px;top:-79px;}
+}
+
+@-webkit-keyframes way2car2 {
+    from {left:10px;top:11px;}
+    to {left:322px;top:-79px;}
+}
+
+@-o-keyframes way2car2 {
+    from {left:10px;top:11px;}
+    to {left:322px;top:-79px;}
+}
+
+.lifeCycle .way3{
+    top:412px;
+    left:632px;
+}
+
+.lifeCycle .way3 .wayCar{
+    transform:rotate(200deg);
+    -webkit-transform:rotate(200deg);
+    -moz-transform:rotate(200deg);
+    -o-transform:rotate(200deg);
+    -ms-transform:rotate(200deg);
+}
+
+.lifeCycle .way3 .car1{
+    top:0;
+    left:0;
+    animation: way3car1 12s infinite;
+    -moz-animation: way3car1 12s infinite;
+    -webkit-animation: way3car1 12s infinite;
+    -o-animation: way3car1 12s infinite;
+}
+
+@keyframes way3car1 {
+    from {left:0;top:0;}
+    to {left:-103px;top:262px;}
+}
+
+@-moz-keyframes way3car1 {
+    from {left:0;top:0;}
+    to {left:-103px;top:262px;}
+}
+
+@-webkit-keyframes way3car1 {
+    from {left:0;top:0;}
+    to {left:-103px;top:262px;}
+}
+
+@-o-keyframes way3car1 {
+    from {left:0;top:0;}
+    to {left:-103px;top:262px;}
+}
+
+.lifeCycle .way3 .car2{
+    top:-6px;
+    left:17px;
+    animation: way3car2 8s infinite;
+    -moz-animation: way3car2 8s infinite;
+    -webkit-animation: way3car2 8s infinite;
+    -o-animation: way3car2 8s infinite;
+}
+
+@keyframes way3car2 {
+    from {top:-6px;left:17px;}
+    to {left:-91px;top:262px;}
+}
+
+@-moz-keyframes way3car2 {
+    from {top:-6px;left:17px;}
+    to {left:-91px;top:262px;}
+}
+
+@-webkit-keyframes way3car2 {
+    from {top:-6px;left:17px;}
+    to {left:-91px;top:262px;}
+}
+
+@-o-keyframes way3car2 {
+    from {top:-6px;left:17px;}
+    to {left:-91px;top:262px;}
+}
+
+.lifeCycle .way4{
+    top:383px;
+    left:683px;
+}
+
+.lifeCycle .way4 .wayCar{
+    transform:rotate(130deg);
+    -webkit-transform:rotate(130deg);
+    -moz-transform:rotate(130deg);
+    -o-transform:rotate(130deg);
+    -ms-transform:rotate(130deg);
+}
+
+.lifeCycle .way4 .car1{
+    top:0;
+    left:0;
+    animation: way4car1 9s infinite;
+    -moz-animation: way4car1 9s infinite;
+    -webkit-animation: way4car1 9s infinite;
+    -o-animation: way4car1 9s infinite;
+}
+
+@keyframes way4car1 {
+    from {top:0;left:0;}
+    to {left:309px;top:252px;}
+}
+
+@-moz-keyframes way4car1 {
+    from {top:0;left:0;}
+    to {left:309px;top:252px;}
+}
+
+@-webkit-keyframes way4car1 {
+    from {top:0;left:0;}
+    to {left:309px;top:252px;}
+}
+
+@-o-keyframes way4car1 {
+    from {top:0;left:0;}
+    to {left:309px;top:252px;}
+}
+
+.lifeCycle .way4 .car2{
+    top:-8px;
+    left:12px;
+    animation: way4car2 7s infinite;
+    -moz-animation: way4car2 7s infinite;
+    -webkit-animation: way4car2 7s infinite;
+    -o-animation: way4car2 7s infinite;
+}
+
+@keyframes way4car2 {
+    from {top:-8px;left:12px;}
+    to {top:232px;left:305px;}
+}
+
+@-moz-keyframes way4car2 {
+    from {top:-8px;left:12px;}
+    to {top:232px;left:305px;}
+}
+
+@-webkit-keyframes way4car2 {
+    from {top:-8px;left:12px;}
+    to {top:232px;left:305px;}
+}
+
+@-o-keyframes way4car2 {
+    from {top:-8px;left:12px;}
+    to {top:232px;left:305px;}
+}
+
+.lifeCycle .way5{
+    top:268px;
+    left:1078px;
+}
+
+.lifeCycle .way5 .wayCar{
+    transform:rotate(184deg);
+    -webkit-transform:rotate(184deg);
+    -moz-transform:rotate(184deg);
+    -o-transform:rotate(184deg);
+    -ms-transform:rotate(184deg);
+}
+
+.lifeCycle .way5 .car1{
+    top:0;
+    left:0;
+    animation: way5car1 6s infinite;
+    -moz-animation: way5car1 6s infinite;
+    -webkit-animation: way5car1 6s infinite;
+    -o-animation: way5car1 6s infinite;
+}
+
+@keyframes way5car1 {
+    from {top:0;left:0;}
+    to {top:256px;left:-13px;}
+}
+
+@-moz-keyframes way5car1 {
+    from {top:0;left:0;}
+    to {top:256px;left:-13px;}
+}
+
+@-webkit-keyframes way5car1 {
+    from {top:0;left:0;}
+    to {top:256px;left:-13px;}
+}
+
+@-o-keyframes way5car1 {
+    from {top:0;left:0;}
+    to {top:256px;left:-13px;}
+}
+
+.lifeCycle .way5 .car2{
+    top:3px;
+    left:14px;
+    animation: way5car2 7s infinite;
+    -moz-animation: way5car2 7s infinite;
+    -webkit-animation: way5car2 7s infinite;
+    -o-animation: way5car2 7s infinite;
+}
+
+@keyframes way5car2 {
+     from {top:3px;left:14px;}
+     to {top:259px;left:1px;}
+ }
+
+@-moz-keyframes way5car2 {
+    from {top:3px;left:14px;}
+    to {top:259px;left:1px;}
+}
+
+@-webkit-keyframes way5car2 {
+    from {top:3px;left:14px;}
+    to {top:259px;left:1px;}
+}
+
+@-o-keyframes way5car2 {
+    from {top:3px;left:14px;}
+    to {top:259px;left:1px;}
+}
+
+.lifeCycle .way6{
+    top:685px;
+    left:565px;
+}
+
+.lifeCycle .way6 .wayCar{
+    transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+}
+
+.lifeCycle .way6 .car1{
+    top:0;
+    left:0;
+    animation: way6car1 6.5s infinite;
+    -moz-animation: way6car1 6.5s infinite;
+    -webkit-animation: way6car1 6.5s infinite;
+    -o-animation: way6car1 6.5s infinite;
+}
+
+@keyframes way6car1 {
+    from {top:0;left:0;}
+    to {top:-5px;left:365px;}
+}
+
+@-moz-keyframes way6car1 {
+    from {top:0;left:0;}
+    to {top:-5px;left:365px;}
+}
+
+@-webkit-keyframes way6car1 {
+    from {top:0;left:0;}
+    to {top:-5px;left:365px;}
+}
+
+@-o-keyframes way6car1 {
+    from {top:0;left:0;}
+    to {top:-5px;left:365px;}
+}
+
+.lifeCycle .way6 .car2{
+    top:16px;
+    left:25px;
+    animation: way6car2 9.5s infinite;
+    -moz-animation: way6car2 9.5s infinite;
+    -webkit-animation: way6car2 9.5s infinite;
+    -o-animation: way6car2 9.5s infinite;
+}
+
+@keyframes way6car2 {
+    from {top:16px;left:25px;}
+    to {top:10px;left:363px;}
+}
+
+@-moz-keyframes way6car2 {
+    from {top:16px;left:25px;}
+    to {top:10px;left:363px;}
+}
+
+@-webkit-keyframes way6car2 {
+    from {top:16px;left:25px;}
+    to {top:10px;left:363px;}
+}
+
+@-o-keyframes way6car2 {
+    from {top: 16px;left: 25px;}
+    to {top: 10px;left: 363px;}
+}
+
+.lifeCycle .way7{
+    top:616px;
+    left:1100px;
+}
+
+.lifeCycle .way7 .wayCar{
+    transform:rotate(53deg);
+    -webkit-transform:rotate(53deg);
+    -moz-transform:rotate(53deg);
+    -o-transform:rotate(53deg);
+    -ms-transform:rotate(53deg);
+    background:url(../assets/images/lifeSycle/car2.png) 0 0 no-repeat;
+    height:22px;
+}
+
+.lifeCycle .way7 .car1{
+    top:0;
+    left:0;
+    animation: way7car1 10.5s infinite;
+    -moz-animation: way7car1 10.5s infinite;
+    -webkit-animation: way7car1 10.5s infinite;
+    -o-animation: way7car1 10.5s infinite;
+}
+
+@keyframes way7car1 {
+    from {top:0;left:0;}
+    to {top:-217px;left:274px;}
+}
+
+@-moz-keyframes way7car1 {
+    from {top:0;left:0;}
+    to {top:-217px;left:274px;}
+}
+
+@-webkit-keyframes way7car1 {
+    from {top:0;left:0;}
+    to {top:-217px;left:274px;}
+}
+
+@-o-keyframes way7car1 {
+    from {top:0;left:0;}
+    to {top:-217px;left:274px;}
+}
+
+.lifeCycle .way7 .car2{
+    top:20px;
+    left:0;
+    animation: way7car2 7s infinite;
+    -moz-animation: way7car2 7s infinite;
+    -webkit-animation: way7car2 7s infinite;
+    -o-animation: way7car2 7s infinite;
+}
+
+@keyframes way7car2 {
+    from {top:20px;left:0;}
+    to {top:-208px;left:290px;}
+}
+
+@-moz-keyframes way7car2 {
+    from {top:20px;left:0;}
+    to {top:-208px;left:290px;}
+}
+
+@-webkit-keyframes way7car2 {
+    from {top:20px;left:0;}
+    to {top:-208px;left:290px;}
+}
+
+@-o-keyframes way7car2 {
+    from {top:20px;left:0;}
+    to {top:-208px;left:290px;}
+}
+
+.lifeCycle .way8{
+    top:704px;
+    left:1100px;
+}
+
+.lifeCycle .way8 .wayCar{
+    transform:rotate(112deg);
+    -webkit-transform:rotate(112deg);
+    -moz-transform:rotate(112deg);
+    -o-transform:rotate(112deg);
+    -ms-transform:rotate(112deg);
+}
+
+.lifeCycle .way8 .car1{
+    top:0;
+    left:0;
+    animation: way8car1 8.5s infinite;
+    -moz-animation: way8car1 8.5s infinite;
+    -webkit-animation: way8car1 8.5s infinite;
+    -o-animation: way8car1 8.5s infinite;
+}
+
+@keyframes way8car1 {
+    from {top:0;left:0;}
+    to {top:128px;left:296px;}
+}
+
+@-moz-keyframes way8car1 {
+    from {top:0;left:0;}
+    to {top:128px;left:296px;}
+}
+
+@-webkit-keyframes way8car1 {
+    from {top:0;left:0;}
+    to {top:128px;left:296px;}
+}
+
+@-o-keyframes way8car1 {
+    from {top:0;left:0;}
+    to {top:128px;left:296px;}
+}
+
+.lifeCycle .way8 .car2{
+    top:10px;
+    left:-15px;
+    animation: way8car2 6.5s infinite;
+    -moz-animation: way8car2 6.5s infinite;
+    -webkit-animation: way8car2 6.5s infinite;
+    -o-animation: way8car2 6.5s infinite;
+}
+
+@keyframes way8car2 {
+    from {top:10px;left:-15px;}
+    to {top:138px;left:281px;}
+}
+
+@-moz-keyframes way8car2 {
+    from {top:10px;left:-15px;}
+    to {top:138px;left:281px;}
+}
+
+@-webkit-keyframes way8car2 {
+    from {top:10px;left:-15px;}
+    to {top:138px;left:281px;}
+}
+
+@-o-keyframes way8car2 {
+    from {top:10px;left:-15px;}
+    to {top:138px;left:281px;}
+}
+
+.lifeCycle .way9{
+    top:409px;
+    left:1403px;
+}
+
+.lifeCycle .way9 .wayCar{
+    background:url(../assets/images/lifeSycle/car2.png) 0 0 no-repeat;
+    height:22px;
+    transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+}
+
+.lifeCycle .way9 .car1{
+    top:0;
+    left:0;
+    animation: way9car1 9.5s infinite;
+    -moz-animation: way9car1 9.5s infinite;
+    -webkit-animation: way9car1 9.5s infinite;
+    -o-animation: way9car1 9.5s infinite;
+}
+
+@keyframes way9car1 {
+    from {top:0;left:0;}
+    to {top:288px;left:-2px;}
+}
+
+@-moz-keyframes way9car1 {
+    from {top:0;left:0;}
+    to {top:288px;left:-2px;}
+}
+
+@-webkit-keyframes way9car1 {
+    from {top:0;left:0;}
+    to {top:288px;left:-2px;}
+}
+
+@-o-keyframes way9car1 {
+    from {top:0;left:0;}
+    to {top:288px;left:-2px;}
+}
+
+.lifeCycle .way9 .car2{
+    top:-8px;
+    left:17px;
+    animation: way9car2 7s infinite;
+    -moz-animation: way9car2 7s infinite;
+    -webkit-animation: way9car2 7s infinite;
+    -o-animation: way9car2 7s infinite;
+}
+
+@keyframes way9car2 {
+    from {top:-8px;left:17px;}
+    to {top:305px;left:15px;}
+}
+
+@-moz-keyframes way9car2 {
+    from {top:-8px;left:17px;}
+    to {top:305px;left:15px;}
+}
+
+@-webkit-keyframes way9car2 {
+    from {top:-8px;left:17px;}
+    to {top:305px;left:15px;}
+}
+
+@-o-keyframes way9car2 {
+    from {top:-8px;left:17px;}
+    to {top:305px;left:15px;}
+}
+
+.lifeCycle .way10{
+    top:808px;
+    left:1412px;
+}
+
+.lifeCycle .way10 .wayCar{
+    transform:rotate(47deg);
+    -webkit-transform:rotate(47deg);
+    -moz-transform:rotate(47deg);
+    -o-transform:rotate(47deg);
+    -ms-transform:rotate(47deg);
+}
+
+.lifeCycle .way10 .car1{
+    top:0;
+    left:0;
+    animation: way10car1 9.5s infinite;
+    -moz-animation: way10car1 9.5s infinite;
+    -webkit-animation: way10car1 9.5s infinite;
+    -o-animation: way10car1 9.5s infinite;
+}
+
+@keyframes way10car1 {
+    from {top:0;left:0;}
+    to {top:-251px;left:267px;}
+}
+
+@-moz-keyframes way10car1 {
+    from {top:0;left:0;}
+    to {top:-251px;left:267px;}
+}
+
+@-webkit-keyframes way10car1 {
+    from {top:0;left:0;}
+    to {top:-251px;left:267px;}
+}
+
+@-o-keyframes way10car1 {
+    from {top:0;left:0;}
+    to {top:-251px;left:267px;}
+}
+
+.lifeCycle .way10 .car2{
+    top:10px;
+    left:10px;
+    animation: way10car2 8s infinite;
+    -moz-animation: way10car2 8s infinite;
+    -webkit-animation: way10car2 8s infinite;
+    -o-animation: way10car2 8s infinite;
+}
+
+@keyframes way10car2 {
+    from {top:10px;left:10px;}
+    to {top:-238px;left:277px;}
+}
+
+@-moz-keyframes way10car2 {
+    from {top:10px;left:10px;}
+    to {top:-238px;left:277px;}
+}
+
+@-webkit-keyframes way10car2 {
+    from {top:10px;left:10px;}
+    to {top:-238px;left:277px;}
+}
+
+@-o-keyframes way10car2 {
+    from {top:10px;left:10px;}
+    to {top:-238px;left:277px;}
+}
+
+
+
+/**服务商*/
+.service .map{
+    width:1300px;
+}
+
+.service #myMap{
+    height:960px;
+}
+
+.service .slider{
+    width:550px;
+}
+
+.service .slider .order{
+    background:url(../assets/images/service.png) 0 0 no-repeat;
+    width:530px;
+    height:284px;
+    margin-top:30px;
+    padding-top:60px;
+}
+
+.service .slider .order .list{
+    width:200px;
+    margin-left:50px;
+    margin-bottom:30px;
+}
+
+.service .slider .order .title{
+    font-size:22px;
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.service .map .pie{
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+}
+
+.service .map #pieEcharts{
+    width:530px;
+    height:400px;
+    margin:625px 0 0 1370px;
+}
+
+.service .mask{
+    top:445px;
+    left:0px;
+    width:100%;
+    height:100%;
+    z-index: 999;
+}
+
+.monitor.new .nav{
+    display:none !important;
+}
+
+.new .newcarCont.active ul{
+    background:#263995;
+}

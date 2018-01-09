@@ -1,0 +1,205 @@
+.portlet-tree {
+	width: 205px;
+	left: 0px;
+	bottom: 0;
+	top: 1px;
+	background: #ffffff;
+	padding: 1px 0;
+	z-index: 10;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+ 
+.portlet-tree ul{
+    margin:0;
+    padding:0;
+}
+.portlet-tree li{
+    list-style:none;
+    text-align:left;
+}
+
+.portlet-tree li.menu-item{
+    width:100%;
+    margin-top: 5px;
+}
+
+.portlet-tree li.menu-button a{
+    display:block; 
+    font-size:12px;
+    height:26px;
+    line-height:26px;
+    overflow:hidden;
+    padding:2px 10px 0;
+    position:relative;
+}
+
+.portlet-tree li.menu-button a:hover{
+    text-decoration:none;
+}
+
+.portlet-tree li.menu-button a span{
+    height:28px;
+    position:absolute;
+    right:0;
+    top:0;
+    width:4px;
+    display:block;
+}
+
+.portlet-tree li.menu-button{background:url(img/menu-button.png) repeat-x top left; color:#ffffff;}
+.portlet-tree li.menu-button a.menu-item{ background:url(img/menu-button.png);background-repeat:no-repeat;background-position: 100% 0%; color:#ffffff;}
+
+
+.dropdown {
+    display:none;
+		margin:0px 2px;
+}
+
+.dropdown li{ 
+    background-color:#e5e5e5;   
+    border-bottom: 1px solid #c9c9c9;   
+    color:#797979;
+    margin:0px 0;    
+		font-size: 12px;
+		height:25px;
+		line-height:25px;
+    padding:4px 18px;
+}
+.dropdown li:hover { background: #efefef; }
+a, a:visited {
+    color:#797979;
+    text-decoration:none;
+    outline:none;
+}
+
+.portlet-tree .rows {
+	background-color: #ddefff;
+	border-bottom: 1px solid #f1f8ff;
+} 
+ 
+
+.portlet-tree .layout-title {
+	display: block;
+	color: #666;
+	font-size: 12px;
+	line-height: 24px;
+	height: 24px;
+	padding-top:4px;
+}
+
+.portlet-tree .layout-title img {
+	padding: 0 0 0 0;
+	max-width: 100%;
+	width: auto\9;
+	height: auto;
+	vertical-align: middle;
+	border: 0;
+	-ms-interpolation-mode: bicubic;
+	line-height: 24px;
+}
+
+.portlet-tree .layout-title input {
+	width: 90px;
+	padding: 0 10px;
+	font-size: 10px;
+	line-height: 20px;
+	height: 20px;
+	position: relative;
+	top: -1px;
+}
+
+.portlet-tree .view {
+	display: none;
+}
+
+.portlet-tree .remove,.portlet-tree .config,.portlet-tree .tabs_config,.portlet-tree .edit-text,.portlet-tree .edit-ppt,.portlet-tree .edit-single-img {
+	display: none;
+}
+.portlet-tree .layout-title .title {
+	float: left;
+}
+
+.portlet-tree .layout-title .icon {
+	float: right;
+}
+ 
+.portlet-tree .drag {
+	cursor:pointer;
+}
+
+.lyrow {
+	border-bottom: 1px solid #c9c9c9;
+}
+ 
+
+.label {
+	display: inline-block;
+	font-size: 11.844px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #ffffff;
+	vertical-align: baseline;
+	white-space: nowrap;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); 
+	float: right;
+	margin-top:4px;
+}
+
+.ui-sortable .label{
+	margin-top:0px;
+}
+
+.img-move{
+	display:inline-block;
+	background-image: url(./img/move.png);
+	width : 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+}
+
+.img-remove{
+	display:inline-block;
+	background-image: url(./img/deletered.png);
+	width : 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+}
+
+.img-config{
+	display:inline-block;
+	background-image: url(./img/config.png);
+	width : 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+}
+.img-edit{
+	display:inline-block;
+	background-image: url(./img/config.png);
+	width : 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+}
+
+.img-plus{
+	display:inline-block;
+	background-image: url(./img/plus.png);
+	width : 16px;
+	height: 16px;
+	padding-right:5px;
+	background-repeat: no-repeat;
+	vertical-align:middle;
+}
+.img-minus{
+	display:inline-block;
+	background-image: url(./img/minus.png);
+	width : 16px;
+	height: 16px;
+	padding-right:5px;
+	background-repeat: no-repeat;
+	vertical-align:middle;
+}

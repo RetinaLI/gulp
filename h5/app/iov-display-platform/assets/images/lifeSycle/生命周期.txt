@@ -1,0 +1,15 @@
+http://localhost:8030/displayHall/lifecycle/querytotalMileage.html
+{"code":"10001","msg":"获取总服务里程统计成功","data":{"totalMileage":6800,"serviceCount":91320}}
+
+http://localhost:8030/displayHall/lifecycle/queryMantainAndHelp.html
+{"code":"10001","msg":"获取保养预约和道路救援统计成功","data":{"orderCount":3,"helpCount":1}}
+
+http://localhost:8030/displayHall/lifecycle/queryAppUserStatistics.html
+{"code":"10001","msg":"获取个体注册，集团注册，app服务次数统计成功","data":{"driverCount":132,"usedCount":11286,"teamCount":15}}
+
+http://localhost:8030/displayHall/lifecycle/queryBadDrvBehavior.html
+{"code":"10001","msg":"获取不良驾驶行为分析统计成功","data":{"badDvrBehavior":7574}}
+
+
+
+http://10.10.3.68:5650/displayHall/lifecycle/querytotalMileage.html

@@ -1,0 +1,170 @@
+{
+  "type" : "success",
+  "content" : "获取报警数据成功",
+  "data" : [ {
+    "alarmCount" : "4",
+    "alarmName" : "制动系统失效"
+  }, {
+    "alarmCount" : "86",
+    "alarmName" : "真空度低报警"
+  }, {
+    "alarmCount" : "38",
+    "alarmName" : "制动灯故障状态"
+  }, {
+    "alarmCount" : "4",
+    "alarmName" : "气压过低报警状态"
+  }, {
+    "alarmCount" : "9",
+    "alarmName" : "超速报警"
+  }, {
+    "alarmCount" : "1",
+    "alarmName" : "GPS远程预锁机"
+  }, {
+    "alarmCount" : "1",
+    "alarmName" : "档位不到位"
+  }, {
+    "alarmCount" : "1",
+    "alarmName" : "GPS三级报警"
+  }, {
+    "alarmCount" : "1",
+    "alarmName" : "GPS五级报警"
+  }, {
+    "alarmCount" : "1",
+    "alarmName" : "接近开关报警"
+  }, {
+    "alarmCount" : "302",
+    "alarmName" : "高压互锁报警"
+  }, {
+    "alarmCount" : "4",
+    "alarmName" : "SOC低报警(BMS)"
+  }, {
+    "alarmCount" : "2",
+    "alarmName" : "总电压过高 "
+  }, {
+    "alarmCount" : "4",
+    "alarmName" : "温度不均衡  "
+  }, {
+    "alarmCount" : "12",
+    "alarmName" : "电池单体一致性差报警"
+  }, {
+    "alarmCount" : "14",
+    "alarmName" : "单体电压过高 "
+  }, {
+    "alarmCount" : "5",
+    "alarmName" : "单体电压过低"
+  }, {
+    "alarmCount" : "5",
+    "alarmName" : "充电过流 "
+  }, {
+    "alarmCount" : "5",
+    "alarmName" : "SOC低报警"
+  }, {
+    "alarmCount" : "6",
+    "alarmName" : "单体电压不均衡报警"
+  }, {
+    "alarmCount" : "2",
+    "alarmName" : "单体过压报警"
+  }, {
+    "alarmCount" : "1",
+    "alarmName" : "单体欠压报警"
+  }, {
+    "alarmCount" : "4",
+    "alarmName" : "充电过流报警"
+  }, {
+    "alarmCount" : "1",
+    "alarmName" : "车载储能装置类型过压报警"
+  }, {
+    "alarmCount" : "6",
+    "alarmName" : "充电储能系统不匹配报警"
+  }, {
+    "alarmCount" : "772",
+    "alarmName" : "终端主电源掉电"
+  }, {
+    "alarmCount" : "3347",
+    "alarmName" : "疲劳驾驶报警"
+  }, {
+    "alarmCount" : "1562",
+    "alarmName" : "超时停车"
+  }, {
+    "alarmCount" : "1",
+    "alarmName" : "超速报警"
+  }, {
+    "alarmCount" : "51014",
+    "alarmName" : "紧急报警"
+  }, {
+    "alarmCount" : "3251",
+    "alarmName" : "GNSS天线未接或被剪断"
+  }, {
+    "alarmCount" : "498",
+    "alarmName" : "终端主电源欠压"
+  }, {
+    "alarmCount" : "6",
+    "alarmName" : "绝缘报警"
+  }, {
+    "alarmCount" : "2012",
+    "alarmName" : "车辆非法点火"
+  }, {
+    "alarmCount" : "492",
+    "alarmName" : "当天累计驾驶超时报警"
+  }, {
+    "alarmCount" : "718",
+    "alarmName" : "疲劳驾驶预警"
+  }, {
+    "alarmCount" : "1355",
+    "alarmName" : "超速预警"
+  }, {
+    "alarmCount" : "181",
+    "alarmName" : "侧翻报警"
+  }, {
+    "alarmCount" : "19",
+    "alarmName" : "碰撞报警"
+  }, {
+    "alarmCount" : "30",
+    "alarmName" : "车辆非法位移"
+  }, {
+    "alarmCount" : "21",
+    "alarmName" : "驱动电机温度报警"
+  }, {
+    "alarmCount" : "6",
+    "alarmName" : "电机控制器温度报警"
+  }, {
+    "alarmCount" : "1",
+    "alarmName" : "SOC跳变报警"
+  }, {
+    "alarmCount" : "10",
+    "alarmName" : "空滤阻塞报警"
+  }, {
+    "alarmCount" : "76",
+    "alarmName" : "DC/DC状态报警"
+  }, {
+    "alarmCount" : "1",
+    "alarmName" : "DC/DC温度报警"
+  }, {
+    "alarmCount" : "594",
+    "alarmName" : "制动系统报警"
+  }, {
+    "alarmCount" : "262",
+    "alarmName" : "低气压报警"
+  }, {
+    "alarmCount" : "7",
+    "alarmName" : "中桥制动气压报警"
+  }, {
+    "alarmCount" : "20",
+    "alarmName" : "前桥制动气压报警"
+  }, {
+    "alarmCount" : "13",
+    "alarmName" : "后桥制动气压报警"
+  }, {
+    "alarmCount" : "18",
+    "alarmName" : "门泵应急阀开关报警"
+  }, {
+    "alarmCount" : "10",
+    "alarmName" : "低水位报警"
+  }, {
+    "alarmCount" : "4",
+    "alarmName" : "发动机冷却液温度报警"
+  }, {
+    "alarmCount" : "127",
+    "alarmName" : "机油压力报警信号"
+  } ]
+}

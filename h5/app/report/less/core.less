@@ -1,0 +1,212 @@
+@import "../../common/less/base.less";
+
+
+@font-color: #4f4f4f;
+@number-color-blue: #00b0f0;
+@number-color-yellow: #ff5608;
+
+@background-color: #f4ffff;
+
+@d: 1;
+
+.number-blue{
+  color: @number-color-blue;
+}
+.number-yellow{
+  color: @number-color-yellow;
+}
+
+html{
+  background-color: rgba(204, 204, 204, .29);
+  height: auto;
+}
+
+body{
+  background-color: white;
+  max-width: 1280px * @d;
+  margin: 0 auto;
+  color: @font-color;
+  height: auto;
+}
+
+.page_title{
+  height: .6rem * @d;
+  background-color: @number-color-blue;
+  color: white;
+  line-height: .6rem * @d;
+
+  h1{
+    font-weight: normal;
+    font-size: .3rem * @d;
+    float: left;
+    margin-left: .2rem * @d;
+  }
+  div{
+    font-size: .2rem * @d;
+    float: right;
+    margin-right: .2rem*@d;
+    span{
+      color: white;
+      font-size: .2rem * @d;
+    }
+  }
+}
+
+.col-3{
+  &>div{
+  }
+}
+
+div.new-row{
+  border-bottom: 1px dashed #ccc;
+  .x-clearfix();
+  padding: .6rem*@d .2rem 1rem*@d;
+
+  &.bottom-canvas{
+    padding-bottom: 0
+  }
+
+  h2{
+    color: @font-color;
+    font-size: .3rem * @d;
+    margin: 0 0 .72rem*@d 0;
+    text-align: center;
+  }
+
+  &.bg-blue{
+    background-color: @background-color;
+  }
+
+  &.first{
+    &>p{
+      font-size: .4rem;
+      text-align: center;
+      margin-bottom: .3rem;
+      span{
+        font-size: .4rem;
+      }
+    }
+  }
+}
+
+i{
+  font-style: normal;
+}
+
+.summary-board-wrap{
+  margin-bottom: .3rem;
+  .x-display-flex();
+  .x-flex-direction-row();
+}
+
+
+
+.summary-board{
+  .x-flex-box(1);
+  text-align: center;
+  display: block;
+  &>div{
+    display: inline-block;
+    position: relative;
+    text-align: left;
+  }
+
+  label{
+    display: block;
+    text-align: left;
+    font-size: .22rem;
+  }
+  p{
+    margin-top: .05rem;
+    span{
+      font-size: .3rem;
+    }
+    i{
+      margin-left: .03rem;
+      font-size: .16rem;
+    }
+  }
+}
+
+.table-wrap{
+  table{
+    width: 80%;
+    margin: 0 auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    th{
+      background-color: #64baf9;
+      color: white;
+      font-size: .2rem;
+      padding: 6px 0;
+      font-weight: normal;
+      text-align: center;
+
+      &.sort-number{
+        width: .5rem;
+      }
+    }
+
+    td{
+      padding: 4px 0;
+      font-size: .18rem;
+      text-align: center;
+    }
+
+    tr:nth-child(odd){
+      background-color: rgba(100, 186, 249, .2);
+    }
+
+    .right{
+      /*text-align: right;*/
+    }
+  }
+}
+
+.canvas-wrap{
+  height: 6rem*@d;
+  width: 100%;
+  width: 100%;
+  margin: 0 auto .6rem;
+}
+#week6AddInfo{
+  height: 7rem;
+  margin-bottom: 0;
+}
+
+.data-paragraph{
+  p{
+    margin: 3px*@d 0;
+    text-align: center;
+    font-size: .2rem*@d;
+  }
+  label{
+    color: #64baf9;
+    font-size: .2rem*@d;
+  }
+  span{
+    font-size: .3rem * @d;
+  }
+}
+
+.travel-report{
+  .travel-info-content{
+    width: 80%;
+    margin: 0 auto .3rem;
+
+    div.summary-board{
+      text-align: left;
+      &:last-child{
+        width: 160px;
+        flex: none;
+      }
+    }
+  }
+}
+
+.hide{
+  display: none;
+}
+
+@import "../less/960.less";

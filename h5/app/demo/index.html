@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit" />
+  <meta name="Keywords" content="" />
+  <meta name="Description" content="" />
+  <title></title>
+  <!-- <link type="image/x-icon" rel="shortcut icon" /> -->
+  <!-- build:css css/core.css -->
+  <link rel="stylesheet/less" type="text/css" href="less/core.less">
+  <!-- endbuild -->
+  <!-- build:remove -->
+  <script type="text/javascript">
+  less = {
+    env: "development",
+    async: false,
+    fileAsync: false,
+    poll: 1000,
+    functions: {},
+    dumpLineNumbers: "comments",
+    relativeUrls: false
+  };
+  </script>
+  <script type="text/javascript" src='../common/js/less.min.js'></script>
+  <!-- endbuild -->
+  <script type="text/javascript">
+  /*
+   * 页面加载逻辑：
+   *    1. 首先会展示给用户一个loading界面；
+   *    2. 执行`pageLoadConfig.beforeStartLoad`方法；
+   *    3. 开始加载页面必要的资源，页面必要的资源根据`pageLoadConfig.files`、`html标签中的data-src/data-poster属性`、`html标签中的data-defer/data-defer-poster`分为三个阶段，分别用数字1、2、3对应，这三个阶段是依次执行的，可以使用`pageLoadConfig.completeStep`来指定在哪个阶段触发完成；
+   *    4. 当`pageLoadConfig.completeStep`指定阶段的资源加载完成后，判断`pageLoadConfig.customCompleteNotify`是否为true，如果为true，会立刻触发执行`pageLoadConfig.onLoadComplete`方法，跳至第5步，否则必须由用户自己手动触发完成事件，代码：`document.dispatchEvent("page-loaded");`，才会进入第5步；
+   *    5. 删除loading，显示页面的首屏；
+   *
+  */
+  var pageLoadConfig = {
+    completeStep: 1,
+    //是否由用户自定义触发加载完成事件，如果设为true，必须手动触发`document.dispatchEvent("page-loaded")`，才能去掉loading页面
+    customCompleteNotify: false,
+    beforeStartLoad: function(callback){
+      if(window.beforeStartLoad) {
+        window.beforeStartLoad(callback);
+      } else {
+        callback();
+      }
+    },
+    onLoadComplete: function(callback) {
+      window.initApp();
+      callback();
+    },
+    files: [
+      // {
+      //   type: "jpg",
+      //   url: ""
+      // }
+    ]
+  };
+  </script>
+</head>
+
+<body>
+  <div class='zbase-loading'>
+    <p class='zbase-note-wrap'><span class='zbase-note'>loading...</span></p>
+  </div>
+  <input type="text" id = 'txt' name="" style = 'border: 1px solid red;'>
+  <div class = 'list'>
+    <div>
+      <img src = 'assets/1.jpg'>
+    </div>
+    <div>
+      <img src = 'assets/1.jpg'>
+    </div>
+    <div>
+      <img src = 'assets/1.jpg'>
+    </div>
+    <div>
+      <img src = 'assets/1.jpg'>
+    </div>
+    <div>
+      <img src = 'assets/1.jpg'>
+    </div>
+    <div>
+      <img src = 'assets/1.jpg'>
+    </div>
+    <div>
+      <img src = 'assets/1.jpg'>
+    </div>
+    <div>
+      <img src = 'assets/1.jpg'>
+    </div>
+    <div>
+      <img src = 'assets/1.jpg'>
+    </div>
+    <div>
+      <img src = 'assets/1.jpg'>
+    </div>
+    <div>
+      <img src = 'assets/1.jpg'>
+    </div>
+    <div>
+      <img src = 'assets/1.jpg'>
+    </div>
+    <div>
+      <img src = 'assets/1.jpg'>
+    </div>
+  </div>
+  <!-- <img data-src="assets/aa.png">
+  <img data-defer="assets/aa.png">
+  <video data-src = "assets/music.mp4" data-poster="assets/thumbnail.png" ></video>
+  <video data-defer-src = "assets/music2.mp4" data-defer-poster="assets/thumbnail2.png" ></video> -->
+</body>
+<!-- build:js js/main.js -->
+<script type="text/javascript" src='../common/js/event.js'></script>
+<script type="text/javascript" src='../common/js/base.js'></script>
+<script type="text/javascript" src='js/main.js'></script>
+<!-- endbuild -->
+
+</html>

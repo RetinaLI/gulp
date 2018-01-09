@@ -1,0 +1,203 @@
+.edit .portal {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	position: relative;
+}
+
+.edit .portal .row-container {
+	background-color: #F5F5F5;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	border: 1px solid #DDDDDD;
+	border-radius: 4px 4px 4px 4px;
+	margin-bottom: 10px;
+	position: relative;
+	padding: 20px 5px 0;
+}
+
+.edit .portal .column {
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	border-radius: 4px 4px 4px 4px;
+	margin: 5px 2px;
+	padding: 0px;
+	position: relative;
+}
+
+.edit .portal .drag {
+	position: absolute;
+	top: 0;
+	right: 0;
+	cursor: pointer;
+}
+
+.edit .portal .lyrow .drag {
+	top: 5px;
+	right: 56px;
+	z-index: 10;
+}
+
+.edit .portal .column .box .drag {
+	top: 5px;
+}
+
+.edit .portal .remove {
+	position: absolute;
+	top: 5px;
+	right: 31px;
+	z-index: 10;
+}
+
+.edit .portal .config {
+	position: absolute;
+	top: 5px;
+	right: 81px;
+	z-index: 10;
+}
+
+.edit .portal .tabs_config {
+	position: absolute;
+	top: 5px;
+	right: 81px;
+	z-index: 10;
+}
+
+.edit .portal .edit-ppt{
+	position: absolute;
+	top: 5px;
+	right: 81px;
+	z-index: 10;
+}
+
+.edit .portal .edit-text{
+	position: absolute;
+	top: 5px;
+	right: 81px;
+	z-index: 10;
+}
+
+.edit .portal .edit-single-img{
+	position: absolute;
+	top: 5px;
+	right: 81px;
+	z-index: 10;
+}
+
+.run .portal {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	position: relative;
+}
+
+.run .portal .row-container {
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
+}
+
+.run .portal .column {
+	background-color: #FFFFFF;
+	border: 0px solid #DDDDDD;
+	border-radius: 4px 4px 4px 4px;
+	margin: 0px 2px;
+	padding: 0px;
+	position: relative;
+}
+
+.run .portal .lyrow .drag {
+	display: none;
+}
+
+.run .portal .lyrow .remove {
+	display: none;
+}
+
+.run .portal .lyrow .edit-text {
+	display: none;
+}
+
+.run .portal .lyrow .edit-ppt {
+	display: none;
+}
+
+.run .portal .lyrow .config {
+	display: none;
+}
+
+.run .portal .lyrow .tabs_config {
+	display: none;
+}
+
+.run .portal .lyrow .edit-single-img {
+	display: none;
+}
+
+.run .portal .column .box .drag {
+	position: absolute;
+	top: 0;
+	right: 30px;
+	cursor: pointer;
+	top: 5px;
+}
+
+.run .portal .column .box .remove {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	z-index: 10;
+}
+
+.portal .layout-title {
+	display: none;
+}
+
+.portal .portlet-title {
+	display: none;
+}
+
+.portal .box .view {
+	display: block;
+}
+
+.portal .box_topright .title {
+	font-size: 12px;
+}
+
+.portal .box_topright .status {
+	font-size: 12px;
+}
+
+.portal .box2 {
+	padding: 0px 2px 0px 0px;
+}
+
+.box,.lyrow {
+	position: relative;
+}
+
+.portal .lyrow {
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.icon_column_one {
+	background-image: url(img/layout-one-column.png);
+	background-repeat: no-repeat;
+	background-position: 0 40%;
+	padding: 0 5px 0 18px;
+	display: block;
+}
+
+.ui-draggable-dragging .view {
+	display: block;
+}
+
+.ui-sortable-placeholder {
+	outline: 1px dashed #ddd;
+	visibility: visible !Important;
+	border-radius: 4px;
+}

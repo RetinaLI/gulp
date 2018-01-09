@@ -1,0 +1,44 @@
+{
+  "name": "iov_h5_projects",
+  "version": "1.0.0",
+  "description": "h5 projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd dist && http-server -p 9002 -d -i",
+    "new": "gulp new",
+    "build": "gulp",
+    "start": "gulp start",
+    "s": "cd app && http-server -p 9001"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@172.24.7.190:front/iov-web-mobile.git"
+  },
+  "author": "zhouweiming (zhouweiming@foton.com.cn)",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-eslint": "^3.0.1",
+    "gulp-group-files": "^2.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-jshint": "^2.0.4",
+    "gulp-less": "^3.3.2",
+    "gulp-param": "^1.0.3",
+    "gulp-rev": "^7.1.2",
+    "gulp-rev-collector": "^1.2.2",
+    "gulp-rev-delete-original": "^0.2.3",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-useref": "^3.1.2",
+    "gulp-util": "^3.0.8",
+    "http-server": "^0.10.0",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1",
+    "less": "^2.7.2",
+    "less-plugin-autoprefix": "^1.5.1",
+    "rasterizehtml": "^1.2.4"
+  }
+}

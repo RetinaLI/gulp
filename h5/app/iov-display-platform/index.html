@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="renderer" content="webkit" />
+  <meta name="Keywords" content="" />
+  <meta name="Description" content="" />
+  <title>车辆监控</title>
+  <!-- <link type="image/x-icon" rel="shortcut icon" /> -->
+  <!-- build:css css/core.css -->
+  <link rel="stylesheet/less" type="text/css" href="less/core.less">
+  <!-- endbuild -->
+  <!-- build:remove -->
+  <script type="text/javascript">
+  less = {
+    env: "development",
+    async: false,
+    fileAsync: false,
+    poll: 1000,
+    functions: {},
+    dumpLineNumbers: "comments",
+    relativeUrls: false
+  };
+  </script>
+  <script type="text/javascript" src='../common/js/less.min.js'></script>
+  <!-- endbuild -->
+  <script type="text/javascript">
+  /*
+   * 页面加载逻辑：
+   *    1. 首先会展示给用户一个loading界面；
+   *    2. 执行`pageLoadConfig.beforeStartLoad`方法；
+   *    3. 开始加载页面必要的资源，页面必要的资源根据`pageLoadConfig.files`、`html标签中的data-src/data-poster属性`、`html标签中的data-defer/data-defer-poster`分为三个阶段，分别用数字1、2、3对应，这三个阶段是依次执行的，可以使用`pageLoadConfig.completeStep`来指定在哪个阶段触发完成；
+   *    4. 当`pageLoadConfig.completeStep`指定阶段的资源加载完成后，判断`pageLoadConfig.customCompleteNotify`是否为true，如果为true，会立刻触发执行`pageLoadConfig.onLoadComplete`方法，跳至第5步，否则必须由用户自己手动触发完成事件，代码：`document.dispatchEvent("page-loaded");`，才会进入第5步；
+   *    5. 删除loading，显示页面的首屏；
+   *
+   */
+  var pageLoadConfig = {
+    completeStep: 1,
+    //是否由用户自定义触发加载完成事件，如果设为true，必须手动触发`document.dispatchEvent("page-loaded")`，才能去掉loading页面
+    customCompleteNotify: false,
+    beforeStartLoad: function(callback) {
+      if (window.beforeStartLoad) {
+        window.beforeStartLoad(callback);
+      } else {
+        callback();
+      }
+    },
+    onLoadComplete: function(callback) {
+      window.initApp();
+      callback();
+    },
+    files: [
+      // {
+      //   type: "jpg",
+      //   url: ""
+      // }
+    ]
+  };
+  </script>
+</head>
+
+<body class="monitor">
+  <div class="page pr">
+    <div class="header clearfix">
+      <!--logo-->
+      <div class="logo fl">
+        <img src="assets/images/logo.png" alt="福田车联网云服务中心" />
+      </div>
+      <!--品牌选择-->
+      <div class="brand_warp fr pr">
+        <a class="brand db clearfix" href="javascript:">
+          <div class="fl brandName">品牌</div>
+          <i class="icon db fr"></i>
+        </a>
+        <div class="nav pa">
+          <ul class="brandNav">
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container clearfix">
+      <!--地图-->
+      <div class="map fl clearfix">
+        <!--左边统计数据-->
+        <div class="map_left fl">
+          <!--总接入车辆-->
+          <div class="allCar car active" data-title="reg">
+            <h3 class="title">总接入车辆</h3>
+            <ul class="clearfix cont allCarCont">
+              <li class="fl count0 active"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+            </ul>
+          </div>
+          <!--当前在线车辆-->
+          <div class="onlineCar car" data-title="online">
+            <h3 class="title">实时在线车辆</h3>
+            <ul class="clearfix cont onlineCarCont">
+              <li class="fl count0 active"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+            </ul>
+          </div>
+          <!--当前在线车辆-->
+          <div class="todayCar car" data-title="dayReg">
+            <h3 class="title">今日注册车辆</h3>
+            <ul class="clearfix cont todayCarCont">
+              <li class="fl count0 active"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+            </ul>
+          </div>
+          <!--中心库存车辆-->
+          <div class="centralityStock stock dn">
+            <h3 class="title">中心库存车辆</h3>
+            <ul class="clearfix cont todayCarCont">
+              <li class="fl count0 active"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+            </ul>
+          </div>
+          <!--经销商库存车辆-->
+          <div class="dealerStock stock dn">
+            <h3 class="title">经销商库存车辆</h3>
+            <ul class="clearfix cont todayCarCont">
+              <li class="fl count0 active"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+            </ul>
+          </div>
+          <!--在途车辆-->
+          <div class="onTheWay stock dn">
+            <h3 class="title">在途车辆</h3>
+            <ul class="clearfix cont todayCarCont">
+              <li class="fl count0 active"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+            </ul>
+          </div>
+          <!--已销车辆-->
+          <div class="sale stock dn">
+            <h3 class="title">已销车辆</h3>
+            <ul class="clearfix cont todayCarCont">
+              <li class="fl count0 active"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+              <li class="fl count0"></li>
+            </ul>
+          </div>
+        </div>
+        <!--右边地图-->
+        <div class="map_cont fl pr">
+          <div class="myMap" id="myMap"></div>
+          <!--<div class="nanhai pa dn"></div>
+                <div class="nanhailft pa dn"></div>
+                <div class="nanhairight pa dn"></div>-->
+        </div>
+      </div>
+      <div class="silder fl">
+        <!--实时在线树-->
+        <div class="online pr">
+          <div id="onlineCont"></div>
+          <div class="time clearfix">
+            <div class="start fl"></div>
+            <div class="zs fl"> - - - - - - - - - - - - - - - -</div>
+            <div class="middle fl"></div>
+            <div class="zs fl"> - - - - - - - - - - - - - - - -</div>
+            <div class="end fl"></div>
+          </div>
+          <div class="shumiddle pa"></div>
+        </div>
+        <!--月注册车辆-->
+        <div class="regMonitor">
+          <div id="regMonitorCont"></div>
+        </div>
+      </div>
+    </div>
+    <div class="footerNav pa clearfix">
+      <a class="navBtn fl" title="车辆监控" href="javascript:;"></a>
+      <a class="navBtn active fl" title="车联网大数据" href="indexData.html"></a>
+      <a class="navBtn brandB fl" title="增值服务" href="addedValue.html"></a>
+      <!-- <a class="navBtn brandB fl" title="生命周期" href="javascript:;"></a>
+      <a class="navBtn brandB fl" title="经销商" href="javascript:;"></a>
+      <a class="navBtn brandB fl" title="服务商" href="javascript:;"></a> -->
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  window.CURRENT_MODULE = "monitor";
+</script>
+<!-- build:js js/index.js -->
+<script src="js/jquery/jquery.js"></script>
+<script src="js/echart/echarts.min.js"></script>
+<script src="js/callserver.js"></script>
+<script src="js/map/china.js"></script>
+<!--百度地图各省份地图数据-->
+<script src="js/map/anhui.js"></script>
+<script src="js/map/aomen.js"></script>
+<script src="js/map/beijing.js"></script>
+<script src="js/map/chongqing.js"></script>
+<script src="js/map/fujian.js"></script>
+<script src="js/map/gansu.js"></script>
+<script src="js/map/guangdong.js"></script>
+<script src="js/map/guangxi.js"></script>
+<script src="js/map/guizhou.js"></script>
+<script src="js/map/hainan.js"></script>
+<script src="js/map/hebei.js"></script>
+<script src="js/map/hubei.js"></script>
+<script src="js/map/heilongjiang.js"></script>
+<script src="js/map/henan.js"></script>
+<script src="js/map/hunan.js"></script>
+<script src="js/map/jiangsu.js"></script>
+<script src="js/map/jiangxi.js"></script>
+<script src="js/map/jilin.js"></script>
+<script src="js/map/liaoning.js"></script>
+<script src="js/map/neimenggu.js"></script>
+<script src="js/map/ningxia.js"></script>
+<script src="js/map/qinghai.js"></script>
+<script src="js/map/shandong.js"></script>
+<script src="js/map/shanghai.js"></script>
+<script src="js/map/shanxi.js"></script>
+<script src="js/map/shanxi1.js"></script>
+<script src="js/map/sichuan.js"></script>
+<script src="js/map/taiwan.js"></script>
+<script src="js/map/tianjin.js"></script>
+<script src="js/map/xianggang.js"></script>
+<script src="js/map/xinjiang.js"></script>
+<script src="js/map/xizang.js"></script>
+<script src="js/map/yunnan.js"></script>
+<script src="js/map/zhejiang.js"></script>
+<script src="js/monitor/monitor.js"></script>
+<script src="js/main/global.js"></script>
+<!-- endbuild -->
+
+</html>

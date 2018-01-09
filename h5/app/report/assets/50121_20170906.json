@@ -1,0 +1,460 @@
+{
+  "carAvgMileageReport":
+  {
+    "seriesData": [10, 103, 118, 171, 175, 328, 335, 376, 498, 1191],
+    "yAxisData": ["北京市", "广东省", "重庆市", "天津市", "安徽省", "江西省", "河北省", "海南省", "辽宁省", "新疆维吾尔自治区"]
+  },
+  "carOperateAvgReport":
+  {
+    "xAxisAvgRunData": ["欧曼", "欧马可", "奥铃", "拓路者", "瑞沃", "时代", "欧辉", "萨普", "雷萨泵送", "工程车", "风景", "雷萨起重机", "伽途", "蒙派克", "迷迪"],
+    "seriesAvgMileageData": [2364, 1547, 1464, 1201, 1188, 1157, 1157, 919, 875, 818, 573, 298, 295, 31, 27],
+    "markPointAvgMileageData": [
+    {
+      "yAxis": 2364,
+      "xAxis": "欧曼"
+    },
+    {
+      "yAxis": 1547,
+      "xAxis": "欧马可"
+    },
+    {
+      "yAxis": 1464,
+      "xAxis": "奥铃"
+    },
+    {
+      "yAxis": 1201,
+      "xAxis": "拓路者"
+    },
+    {
+      "yAxis": 1188,
+      "xAxis": "瑞沃"
+    },
+    {
+      "yAxis": 1157,
+      "xAxis": "时代"
+    },
+    {
+      "yAxis": 1157,
+      "xAxis": "欧辉"
+    },
+    {
+      "yAxis": 919,
+      "xAxis": "萨普"
+    },
+    {
+      "yAxis": 875,
+      "xAxis": "雷萨泵送"
+    },
+    {
+      "yAxis": 818,
+      "xAxis": "工程车"
+    },
+    {
+      "yAxis": 573,
+      "xAxis": "风景"
+    },
+    {
+      "yAxis": 298,
+      "xAxis": "雷萨起重机"
+    },
+    {
+      "yAxis": 295,
+      "xAxis": "伽途"
+    },
+    {
+      "yAxis": 31,
+      "xAxis": "蒙派克"
+    },
+    {
+      "yAxis": 27,
+      "xAxis": "迷迪"
+    }],
+    "markPointAvgTimeData": [
+    {
+      "yAxis": 54,
+      "xAxis": "欧曼"
+    },
+    {
+      "yAxis": 43,
+      "xAxis": "欧马可"
+    },
+    {
+      "yAxis": 42,
+      "xAxis": "奥铃"
+    },
+    {
+      "yAxis": 45,
+      "xAxis": "拓路者"
+    },
+    {
+      "yAxis": 35,
+      "xAxis": "瑞沃"
+    },
+    {
+      "yAxis": 44,
+      "xAxis": "时代"
+    },
+    {
+      "yAxis": 62,
+      "xAxis": "欧辉"
+    },
+    {
+      "yAxis": 34,
+      "xAxis": "萨普"
+    },
+    {
+      "yAxis": 84,
+      "xAxis": "雷萨泵送"
+    },
+    {
+      "yAxis": 28,
+      "xAxis": "工程车"
+    },
+    {
+      "yAxis": 31,
+      "xAxis": "风景"
+    },
+    {
+      "yAxis": 45,
+      "xAxis": "雷萨起重机"
+    },
+    {
+      "yAxis": 15,
+      "xAxis": "伽途"
+    },
+    {
+      "yAxis": 2,
+      "xAxis": "蒙派克"
+    },
+    {
+      "yAxis": 2,
+      "xAxis": "迷迪"
+    }],
+    "seriesAvgTimeData": [54, 43, 42, 45, 35, 44, 62, 34, 84, 28, 31, 45, 15, 2, 2]
+  },
+  "carLongReport":
+  {
+    "seriesData": [0, 0, 0, 3, 6, 22, 33, 40, 44, 45],
+    "yAxisData": ["北京市", "新疆维吾尔自治区", "重庆市", "上海市", "江苏省", "山东省", "安徽省", "陕西省", "湖南省", "广东省"]
+  },
+  "carAvgSpeedReport":
+  {
+    "seriesData": [0, 16, 23, 27, 33, 33, 37, 40, 48, 95],
+    "yAxisData": ["新疆维吾尔自治区", "广东省", "陕西省", "安徽省", "江西省", "江西省", "天津市", "河南省", "河北省", "江苏省"]
+  },
+  "carAttendanceReport":
+  {
+    "seriesData": [14, 14, 14, 14, 14, 14, 14, 20, 24, 57],
+    "yAxisData": ["浙江省", "吉林省", "海南省", "江苏省", "上海市", "河南省", "江西省", "广东省", "安徽省", "陕西省"]
+  },
+  "optionCarBrandAddAndRunInfo":
+  {
+    "markPointAddData": [
+    {
+      "yAxis": 82,
+      "xAxis": "时代"
+    },
+    {
+      "yAxis": 71,
+      "xAxis": "奥铃"
+    },
+    {
+      "yAxis": 67,
+      "xAxis": "瑞沃"
+    },
+    {
+      "yAxis": 63,
+      "xAxis": "欧马可"
+    },
+    {
+      "yAxis": 62,
+      "xAxis": "欧辉"
+    },
+    {
+      "yAxis": 49,
+      "xAxis": "欧曼"
+    },
+    {
+      "yAxis": 39,
+      "xAxis": "工程车"
+    },
+    {
+      "yAxis": 28,
+      "xAxis": "雷萨泵送"
+    },
+    {
+      "yAxis": 20,
+      "xAxis": "雷萨起重机"
+    }],
+    "Q3AddData": [
+    {
+      "onLineRate": 82,
+      "name": "时代",
+      "onLine": 4197
+    },
+    {
+      "onLineRate": 71,
+      "name": "奥铃",
+      "onLine": 10441
+    },
+    {
+      "onLineRate": 67,
+      "name": "瑞沃",
+      "onLine": 5951
+    },
+    {
+      "onLineRate": 63,
+      "name": "欧马可",
+      "onLine": 11299
+    },
+    {
+      "onLineRate": 62,
+      "name": "欧辉",
+      "onLine": 9419
+    },
+    {
+      "onLineRate": 49,
+      "name": "欧曼",
+      "onLine": 278383
+    },
+    {
+      "onLineRate": 39,
+      "name": "工程车",
+      "onLine": 6247
+    },
+    {
+      "onLineRate": 28,
+      "name": "雷萨泵送",
+      "onLine": 5572
+    },
+    {
+      "onLineRate": 20,
+      "name": "雷萨起重机",
+      "onLine": 66
+    }],
+    "xAxisAddAndRunData": ["时代", "奥铃", "瑞沃", "欧马可", "欧辉", "欧曼", "工程车", "雷萨泵送", "雷萨起重机"],
+    "onlineData":
+    {
+      "carOnlineNum": 331575,
+      "carOnlineRate": 50
+    },
+    "seriesAddData": [82, 71, 67, 63, 62, 49, 39, 28, 20]
+  },
+  "optionWeek6AddInfo":
+  {
+    "section": ["12/18", "12/24"],
+    "totalJson":
+    {
+      "markPointData": [
+      {
+        "name": "雷萨泵送",
+        "value": 2
+      },
+      {
+        "name": "雷萨起重机",
+        "value": 24
+      },
+      {
+        "name": "瑞沃",
+        "value": 42
+      },
+      {
+        "name": "时代",
+        "value": 95
+      },
+      {
+        "name": "欧马可",
+        "value": 352
+      },
+      {
+        "name": "奥铃",
+        "value": 373
+      },
+      {
+        "name": "欧辉",
+        "value": 483
+      },
+      {
+        "name": "欧曼",
+        "value": 1936
+      }],
+      "carTotalNum": 660828,
+      "addCarNum1": 3307,
+      "addCarNum2": 2723,
+      "addRate": 18,
+      "xData": ["雷萨泵送", "雷萨起重机", "瑞沃", "时代", "欧马可", "奥铃", "欧辉", "欧曼"],
+      "sendTime": "2017-12-25 08:53:06"
+    }
+  },
+  "optionCarBrandRunInfo":
+  {
+    "seriesMileAgeData": [56278, 1182, 922, 757, 483, 431, 408, 311, 411],
+    "xAxisRunInfoData": ["欧曼", "欧马可", "奥铃", "欧辉", "瑞沃", "工程车", "雷萨泵送", "时代", "雷萨起重机"],
+    "markPointMileageData": [
+    {
+      "yAxis": 56278,
+      "xAxis": "欧曼"
+    },
+    {
+      "yAxis": 1182,
+      "xAxis": "欧马可"
+    },
+    {
+      "yAxis": 922,
+      "xAxis": "奥铃"
+    },
+    {
+      "yAxis": 757,
+      "xAxis": "欧辉"
+    },
+    {
+      "yAxis": 483,
+      "xAxis": "瑞沃"
+    },
+    {
+      "yAxis": 431,
+      "xAxis": "工程车"
+    },
+    {
+      "yAxis": 408,
+      "xAxis": "雷萨泵送"
+    },
+    {
+      "yAxis": 311,
+      "xAxis": "时代"
+    },
+    {
+      "yAxis": 411,
+      "xAxis": "雷萨起重机"
+    }],
+    "seriesRunTimeData": [1293, 34, 27, 41, 15, 15, 38, 12, 0],
+    "markPointRunTimeData": [
+    {
+      "yAxis": 1293,
+      "xAxis": "欧曼"
+    },
+    {
+      "yAxis": 34,
+      "xAxis": "欧马可"
+    },
+    {
+      "yAxis": 27,
+      "xAxis": "奥铃"
+    },
+    {
+      "yAxis": 41,
+      "xAxis": "欧辉"
+    },
+    {
+      "yAxis": 15,
+      "xAxis": "瑞沃"
+    },
+    {
+      "yAxis": 15,
+      "xAxis": "工程车"
+    },
+    {
+      "yAxis": 38,
+      "xAxis": "雷萨泵送"
+    },
+    {
+      "yAxis": 12,
+      "xAxis": "时代"
+    },
+    {
+      "yAxis": 0,
+      "xAxis": "雷萨起重机"
+    }],
+    "totalJson":
+    {
+      "LocationNum": 31,
+      "CanNum": 31,
+      "AlarmNum": 9,
+      "carNum": 281614,
+      "runTime": 1475,
+      "mileAge": 60773
+    },
+    "OnlineData": [
+    {
+      "欧曼":
+      {
+        "name": "欧曼",
+        "carNum": 241390,
+        "runTime": 1293,
+        "mileAge": 56278
+      }
+    },
+    {
+      "欧马可":
+      {
+        "name": "欧马可",
+        "carNum": 8352,
+        "runTime": 34,
+        "mileAge": 1182
+      }
+    },
+    {
+      "奥铃":
+      {
+        "name": "奥铃",
+        "carNum": 7208,
+        "runTime": 27,
+        "mileAge": 922
+      }
+    },
+    {
+      "欧辉":
+      {
+        "name": "欧辉",
+        "carNum": 7449,
+        "runTime": 41,
+        "mileAge": 757
+      }
+    },
+    {
+      "瑞沃":
+      {
+        "name": "瑞沃",
+        "carNum": 4207,
+        "runTime": 15,
+        "mileAge": 483
+      }
+    },
+    {
+      "工程车":
+      {
+        "name": "工程车",
+        "carNum": 5277,
+        "runTime": 15,
+        "mileAge": 431
+      }
+    },
+    {
+      "雷萨泵送":
+      {
+        "name": "雷萨泵送",
+        "carNum": 4814,
+        "runTime": 38,
+        "mileAge": 408
+      }
+    },
+    {
+      "时代":
+      {
+        "name": "时代",
+        "carNum": 2880,
+        "runTime": 12,
+        "mileAge": 311
+      }
+    },
+    {
+      "雷萨起重机":
+      {
+        "name": "雷萨起重机",
+        "carNum": 37,
+        "runTime": 0,
+        "mileAge": 411
+      }
+    }]
+  }
+}
